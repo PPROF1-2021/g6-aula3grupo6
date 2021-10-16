@@ -1,0 +1,123 @@
+
+body
+{
+    width: 600px;
+    height: 750px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background-size: 1600px 700px;
+}
+
+section
+{
+    width: 600px;
+    height: 550px;
+    display: inline-flex;
+    background-image: url(fondo.jpg);
+    background-repeat: no-repeat;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+section:before
+{
+    content: "";
+    width: 600px;
+    height: 550px;
+    background-color: rgb(177, 173, 173);
+    position: absolute;
+    opacity: 0.7;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+}
+.derecha
+{
+    width: 50%;
+    height: 400px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    position: relative;
+}
+
+.izquierda
+{
+    width: 50%;
+    height: 400px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    position: relative;
+}
+header
+{
+    width: auto;
+    height: 200px;
+    margin: auto;
+    padding: 10px;
+    font-size: x-large;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    color: aquamarine;
+    justify-items: center;
+    background-color: rgb(48, 48, 133);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-image: url(logo.png);
+    background-position: top right;
+    background-size: 100px 100px;
+    background-repeat: no-repeat;
+}
+.menu
+{
+    width: 75%;
+    height: 100px;
+    background-color: rgb(223, 225, 238);
+    padding: 10px;
+    font-size: large;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 20px;
+    justify-content: center;
+    image-orientation:from-image;
+    margin-top: 20px;
+    margin-left:30px;
+    position: relative;
+}
+
+article
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-left: 15px;
+}
+nav
+{
+    border-top-left-radius: 20px;
+    font-size: x-large;
+}
+.logueo
+{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    position: relative; 
+    justify-content: center; 
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.registro
+{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+    position: relative; 
+    justify-content: center; 
+    font-size: large; 
+    font-weight: bold;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}

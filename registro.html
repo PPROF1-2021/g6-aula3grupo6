@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUS Manager</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <header>
+        <h1>
+            S.U.S. Manager
+        </h1>
+        <h2>
+            Administrador de Suscripciones
+        </h2>
+    </header>
+    <section>
+        <div class="izquierda">
+            <div class="registro">
+                    <form>
+                        <label for="nombre">Nombre </label>
+                        <br>
+                        <input id="nombre" type="text" name="nombre" placeholder="Nombre" required="">  
+                        <br>
+                        <label for = "telefono">Telefono:</label>
+                        <br>
+                        <input id="telefono" type="tel" name="telefono" placeholder="(Codigo) Numero" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" title="Por favor coloca el código de área sin cero y el número" required ="" />
+                        <br>
+                        <label for = "celular">Telefono móvil:</label>
+                        <br>
+                        <input id="celular" type="tel" name="celular" placeholder="(Codigo) Numero" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" title="Por favor coloca el código de área sin cero y el número sin el 15" required ="" />
+                        <br> 
+                        <label for = "email">E - mail:</label>
+                        <br>
+                        <input id="email" type="email" name="email" placeholder="ejemplo@correo.com" required=""/>
+                        <br>
+                        <label for="fecha">Fecha de Nacimiento: </label>
+                        <br>
+                        <input id="nacimiento" type="date" name="nacimiento"/>
+                        <br>
+                        <p>
+                            Intereses:
+                        </p>
+                        <input id="peliculas/Series" type="checkbox" name="peliculas/Series">
+                        <label for="peliculas">Peliculas/Series</label>
+                        <br>
+                        <input id="musica" type="checkbox" name="musica">
+                        <label for="musica">Musica</label>
+                        <br>
+                        <input id="juegos" type="checkbox" name="juegos">
+                        <label for="juegos">Juegos</label>
+                        <br>
+                            <input id="notificaciones" type="checkbox" name="notificaciones">
+                            <label for="juegos">Desea recibir notificaciones en su casilla de mail sobre aplicaciones dentro de estos gustos e intereses?</label>
+                        
+                        
+                        
+                    </form>   
+            </div> 
+        </div>
+        <div class="derecha">
+            <div class=menu>
+                <nav>
+                    <ul>
+                        <li> <a href="index.html"> Inicio </a></li>
+                        <li> <a href="sesion.html" >Iniciar sesión</a></li>  
+                    </ul>
+                </nav>
+                <br>
+                <form>
+                    <p>
+                        <label for="usuario">Genere su usuario</label>
+                        <br>
+                        <input id="usuario" type="text" placeholder="8 digitos" pattern="{8}" title="Por favor genere un usuario de 8 digitos sin espacios" aria-placeholder=""/>
+                        <br>
+                        <label for="clave">Genere su contraseña</label>
+                        <br>
+                        <input id="clave" type="password" placeholder="6 digitos" pattern="[0-9]{6}" title="Por favor genere una clave de 6 digitos"/>
+                        <br>
+                        <label for="clave">Por favor reitere su contraseña</label>
+                        <br>
+                        <input id="clave" type="password" placeholder="6 digitos" pattern="[0-9]{6}" title="Por favor genere una clave de 6 digitos"/>
+                    </p>
+                    <p>
+                        <input id="enviar" type="submit" name="submit" value="Enviar"/>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
