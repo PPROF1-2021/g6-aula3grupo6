@@ -1,4 +1,4 @@
-
+/* Aqui va el estilo de todas las paginas */
 body
 {
     width: 600px;
@@ -7,6 +7,7 @@ body
     margin-top: 20px;
     margin-bottom: 30px;
     background-size: 1600px 700px;
+    background-color: rgb(167, 166, 235);
 }
 
 section
@@ -51,7 +52,7 @@ section:before
 header
 {
     width: auto;
-    height: 200px;
+    height: auto;
     margin: auto;
     padding: 10px;
     font-size: x-large;
@@ -83,6 +84,12 @@ header
     position: relative;
 }
 
+nav
+{
+    border-top-left-radius: 20px;
+    font-size: x-large;
+}
+
 article
 {
     font-family: Arial, Helvetica, sans-serif;
@@ -91,11 +98,9 @@ article
     margin-top: 30px;
     margin-left: 15px;
 }
-nav
-{
-    border-top-left-radius: 20px;
-    font-size: x-large;
-}
+
+
+
 .logueo
 {
     width: 100%;
@@ -117,7 +122,101 @@ nav
     margin-top: 20px;
     position: relative; 
     justify-content: center; 
-    font-size: large; 
-    font-weight: bold;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
+
+/*plaforma.html */
+#icono
+{
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: small;
+    margin: 10px;
+    background-color: rgb(223, 225, 238);
+    -moz-box-shadow:10px 10px 5px #000000;
+    -webkit-box-shadow:10px 10px 5px #000000;
+    box-shadow:10px 10px 5px #000000;
+    background:-webkit-gradient(radial, 165 0, 0, 49 -357, 563, from(#0060A1), to(#157028))
+}
+
+figcaption
+{
+    color: rgb(233, 189, 15);
+    text-decoration: none;
+}
+
+/* menu de navegacion que muestra la informacion de cada aplicacion */
+
+.botonera 
+{
+	width:95%;
+	height:auto;
+    font-size:small;
+}
+
+a
+{
+	text-decoration:none;
+}
+
+.botoneral ul 
+{
+    width: auto;
+	margin:0;
+	padding:0;
+    list-style-type:none;
+    text-decoration:none;
+}
+	
+
+
+.botonera ul li 
+{
+	display: inline-flexbox;
+}
+
+
+.botonera ul li a 
+{
+	color:#333;
+	text-decoration:none;
+	width: 90%;
+	height: auto;
+	line-height: 30px;
+	
+}
+	
+.botonera ul li a:hover 
+{
+	background-color:#eceb82;
+}
+
+/*estilo de tablas */
+thead
+{
+    background-color: aquamarine;
+
+}
+
+tbody
+{
+    background-color: rgb(150, 228, 238);
+}
+
+
+button
+{
+    width:95%;
+	height:auto;
+    font-size:small;
+    margin:0;
+	padding:0;
+    list-style-type:none;
+    text-decoration:none;
+    background-color:aquamarine;
+}
+
+button:hover {
+    background: #2079b0;
+    text-decoration: none;
+}git@github.com:PPROF1-2021/g6-aula3grupo6.git
