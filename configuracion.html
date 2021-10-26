@@ -6,22 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SUS Manager</title>
     <link rel="stylesheet" href="css/estilo.css">
+    <link rel="icon" href="css/favicon.jpg" sizes="16x16" type="image/jpg">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Bootstrap 4</title>
+    
 </head>
+
 <body>
-    <header>
-        <h1>
-            S.U.S. Manager
-        </h1>
-        <h2>
-            Administrador de Suscripciones
-        </h2>
-        <h3>
-            Bienvenido: "Nombre usuario".
-        </h3>
-    </header>
-    <section>
-        <div class="izquierda">
-            <article>
+
+   <section class="container">
+    <div class="cabecera">
+        <div class="row">
+            <div class="col-12">
+                <p>
+                    sus
+                </p>
+            </div>
+            <div class="col-9">
+                <h1>S.U.S Manager</h1>
+                <h2>Administrador de Suscripciones</h2>
+            </div>
+        <div class="col-3">
+            <figure>
+                <img src="css/logo.png" class="img-fluid">
+                
+            </figure>
+            </div>
+        </div>
+    </div>
+
+    <div class="cuerpo">
+        <div class="row">
+            <div class="col-8">
                 <div id="icono">
                     <p>
                         <a href="https://www.netflix.com/ar/">
@@ -32,84 +51,124 @@
                         </a>
                     </p>
                 </div>
-                
-                <div id="icono">
-                    <table>
-                    <thead>
-                        <tr>
-                            <td>
-                                <strong>
-                                    Importe mensual
-                                </strong>
-                            </td>
-                            <td>
-                                <strong>
-                                    Periodo de Facturacion
-                                </strong>
-                            </td>
-                            <td>
-                                <strong>
-                                    Notificaciones
-                                </strong>
-                            </td>
-                        </tr>
-                    </thead>
+            </div>
 
-                    <tbody>
-                        <tr>
-                            <td>
-                                $ 00,00
-                            </td>
-
-                            <td>
-                                Cada 30 dias
-                            </td>
-                            <td>
-                                Activo / No activo
-                            </td>
-                            
-                        </tr>
-
-                        <tr>
-                            <td>
-                                <a href="">Modificar</a>
-                            </td>
-                            <td>
-                                <a href="">Modificar</a>
-                            </td>
-                            <td>
-                                <a href="">Modificar</a>
-                            </td>
-                        </tr>
-
-                    </tbody>
-
-                    </table>
-
-                
-                </div>
-
-                <div id="icono">
+            <div class="col-4">
+                <div class="menu">
+                    <nav class="navbar navbar-light bg-light">
+                        <a href="sesion.html">Cerrar Sesión</a>
+                    </nav>
                     
-                    <a href="">Eliminar suscripcion</a>
-                    <p>
-                        Si usted elimina esta suscripcion no podra administrarla desde S.U.S Mannager
-                    </p>
+                    <nav class="navbar navbar-light bg-light">
+                        <a href="index.html">Salir</a>
+                    </nav>
+
+                    <nav class="navbar navbar-light bg-light">
+                        <a href="netflix.html">Volver</a>
+                    </nav>
+                    
                 </div>
-            </article>
-        </div>
-        <div class="derecha">
-            <div class=menu>
-                <nav>
-                    <ul>
-                        <li> <a href="sesion.html" >Cerrar Sesión</a></li>  
-                        <li> <a href="index.html"> Salir </a></li>
-                        <li> <a href="plataforma.html" >Volver</a></li>  
+            </div>
+
+        <div class="col-12">
+            
+            <div id="icono">
+                <div class="row">
+                    <div class="col-4">
+                        <h5>
+                            Importe<br>Mensual
+                        </h5>
+                        <p>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text">$</span>
+                                </div>
+
+                                <input type="number" class="form-control" aria-label="Amount (to the nearest dollar)">
+                                
+                            </div>
+                        </p>
+
+                        <button type="button" class="btn btn-light">Modificar</button>
                         
-                    </ul>
-                </nav>
+                    </div>
+                    
+                    <div class="col-4">
+                        <h5>
+                            Periodo <br> Facturación
+                        </h5>
+                        <p>
+                            <select class="custom-select" id="inputGroupSelect01">
+                                <option selected>Choose...</option>
+                                <option value="1">Cada 20 días</option>
+                                <option value="2">Cada 30 días</option>
+                                
+                              </select>
+                        </p>
+                        <button type="button" class="btn btn-light">Modificar</button>
+                        
+                    </div>
+    
+                    <div class="col-4">
+                        <h5>
+                            Notificaciones
+                        </h5>
+                        <p>
+                            <select class="custom-select" id="inputGroupSelect01">
+                                <option selected>Choose...</option>
+                                <option value="1">Si</option>
+                                <option value="2">No</option>
+                                
+                              </select>
+                        </p>
+                        <button type="button" class="btn btn-light">Modificar</button>
+                        
+                    </div>
+                </div>
+                    
+                
             </div>
         </div>
+
+        
+    </div>
+    <footer>
+        <div class="pie">
+            <div class="row">
+                <div class="col-12">
+                    <p>
+                        Todos los derechos reservados
+                    </p>
+                    
+                </div>
+                <div class="col-4">
+                    <p>
+                        I.S.P.C:
+                    <br>
+                        Instituto Superior Politecnico de Córdoba
+                    </p>
+                </div>
+                <div class="col-4">
+                    <p>
+                        PROYECTO DE PRACTICA PROFESIONALIZANTE
+                    <br>
+                        En Coordinación con PROGRAMACIÓN WEB
+                    </p>
+                </div>
+            </div>
+            
+        </div>
+    </footer>
     </section>
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" ></script>
+
+    
 </body>
+
 </html>
