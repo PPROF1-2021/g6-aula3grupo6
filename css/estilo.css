@@ -24,11 +24,10 @@ nav{
 }
 
 
-
 .cuerpo
 {
     background-color: rgb(177, 173, 173);
-    opacity: 0.7;
+    opacity: 0.9;
     font-family: Arial, Helvetica, sans-serif;
     border-radius: 20px;
     padding: 10px;
@@ -48,28 +47,28 @@ section
 
 #icono
 {
-    color: aquamarine;
+    
     padding: 10px;
     border: 1px solid black;
     border-radius: 10px;
     font-size: small;
     margin: 10px;
-    background-color: rgb(223, 225, 238);
-    -moz-box-shadow:10px 10px 5px #000000;
-    -webkit-box-shadow:10px 10px 5px #000000;
+    
+    background:-webkit-gradient(radial, 165 0, 0, -44 -57, 465, from(#53afd4), to(#dbcc00));
     box-shadow:10px 10px 5px #000000;
-    background:-webkit-gradient(radial, 165 0, 0, 49 -357, 563, from(#0060A1), to(#157028))
+    
     
 }
 
 .pie
 {
     color:cornsilk;
-    padding: 10px;
+    padding: 20px;
     border-radius: 10px;
     background-color: rgb(13, 7, 63);
     opacity: 0.8;
     font-size: smaller;
+    
 }
 
 div

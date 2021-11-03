@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="En esta pagina, podra registrar sus datos para acceder a las funciones del gestor">
-    <meta name="keywords" content="suscripcion, manager, registro, datos, usuario">
-    <title>Registro</title>
+    
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="icon" href="css/favicon.jpg" sizes="16x16" type="image/jpg">
 
@@ -34,12 +32,7 @@
                         <img src="css/logo.png" class="img-fluid">        
                     </figure>
                 </div>
-                <div class="col-9">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item bread"><a href="index.html">Inicio</a></li>
-                        <li class="breadcrumb-item active bread" aria-current="page">Registro</li>
-                      </ol>
-                </div>
+                
             </div>
         </div>
             
@@ -47,43 +40,57 @@
             <div class="row">
                 <div class="col-8">
                     <form>
+                        <div class="form-row">
+                          <div class="col-md-4 mb-3">
+                            <label for="validationServer01">Nombre</label>
+                            <input type="text" class="form-control is-valid" id="validationServer01" placeholder="Nombre" required>
+                          </div>
+
+                          <div class="col-md-4 mb-3">
+                            <label for="validationServer02">Apellido</label>
+                            <input type="text" class="form-control is-valid" id="validationServer02" placeholder="Apellido" required>
+                          </div>
+
+                          <div class="col-md-4 mb-3">
+                            <label for="validationServer02">Telefono</label>
+                            <input type="number" class="form-control is-valid" id="validationServer02" placeholder="(Cod Area) Nro.Telefono" value="Telefono" required>
+                          </div>
+
+                          <div class="col-md-4 mb-3">
+                            <label for="validationServer02">E-Mail</label>
+                            <input type="email" class="form-control is-valid" id="validationServer02" placeholder="name@example.com" required>
+                          </div>
+
+                          <div class="col-md-4 mb-3">
+                            <label for="validationServer02">Fecha Nacimiento</label>
+                            <input type="date" class="form-control is-valid" id="validationServer02" placeholder="date" value="date" required>
+                          </div>
+
+                          <div class="col-md-4 mb-3">
+                            <label for="validationServerUsername">Username</label>
+                            <div class="input-group">
+                              <div class="input-group-prepend">
+                                <span class="input-group-text" id="inputGroupPrepend3">@</span>
+                              </div>
+                                <input type="text" class="form-control is-valid" id="validationServerUsername" placeholder="Username" aria-describedby="inputGroupPrepend3" required>
+                            </div>
+                        </div>
                         
-                        <input id="nombre" type="text" name="nombre" placeholder="Nombre" required>  
-                            
-                        <br>
-                            
-                        <input id="apellido" type="text" name="apellido" placeholder="Apellido" required> 
-                        
-                        <br>
-                        
-                        <input id="celular" type="tel" name="celular" placeholder="(Codigo) Numero" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" title="Por favor coloca el código de área sin cero y el número sin el 15" required/>
-                            
-                        <br> 
-                            
-                        <input id="email" type="email" name="email" placeholder="ejemplo@correo.com" required/>
-                            
-                        <br>
-                        
-                        <input id="nacimiento" type="date" name="nacimiento"/>
-                            
-                        <p>
-                            <label for="usuario">Genere su usuario</label>
-                            <br>
-                            <input id="usuario" type="text" placeholder="8 digitos" pattern="{8}" title="Por favor genere un usuario de 8 digitos sin espacios" required />
-                            <br>
-                            <label for="clave">Genere su contraseña</label>
-                            <br>
-                            <input id="clave" type="password" placeholder="6 digitos" pattern="[0-9]{6}" title="Por favor genere una clave de 6 digitos" required/>
-                            <br>
-                            <label for="clave">Por favor reitere su contraseña</label>
-                            <br>
-                            <input id="clave" type="password" placeholder="6 digitos" pattern="[0-9]{6}" title="Por favor genere una clave de 6 digitos" required/>
-                            </p>
-                            <p>
-                                <input id="enviar" type="submit" name="submit" value="Enviar"/>
-                            </p>
-                        
-                    </form>
+                        </div>
+
+                        <div class="form-group">
+                          <div class="form-check">
+                            <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" required>
+                            <label class="form-check-label" for="invalidCheck3">
+                              Aceptar terminos y condiciones.
+                            </label>
+                            <div class="invalid-feedback">
+                              Por favor acepte los términos y condiciones para poder continuar.
+                            </div>
+                          </div>
+                        </div>
+                        <button class="btn btn-primary" type="submit">Enviar</button>
+                      </form>
                 </div>
 
                 <div class="col-4">
