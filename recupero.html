@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="En esta pagina, podra recuperar su usuario y/o contraseña">
-    <meta name="keywords" content="suscripcion, manager, recupero, usuario, contraseña">
-    <title>Recuperación de datos</title>
+    
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="icon" href="css/favicon.jpg" sizes="16x16" type="image/jpg">
 
@@ -34,38 +32,29 @@
                     <img src="css/logo.png" class="img-fluid">  
                 </figure>
             </div>
-            <div class="col-9">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item bread"><a href="index.html">Inicio</a></li>
-                    <li class="breadcrumb-item bread"><a href="sesion.html">Iniciar Sesión</a></li>
-                    <li class="breadcrumb-item active bread" aria-current="page">Recuperar Datos</li>
-                  </ol>
-            </div>
+            
         </div>
     </div>
    
     <div class="cuerpo">
         <div class="row">
             <div class="col-8">
-                <h1 style="color: rgb(48, 45, 175);" >
-                        Recupero de Usuario/Clave
-                </h1>
-
-                <form>
+                <div class="alert alert-success" role="alert">
+                    <h4 class="alert-heading">Recupero de Usuario y/o Clave</h4>
                     <p>
-                    <label for = "email">Ingrese su E - mail:</label>
-                    <br>
-                    <input id="email" type="email" name="email" placeholder="ejemplo@correo.com" required=""/>
-                    <br>
+                        <form>
+                            <div class="form-group">
+                              <label for="exampleInputEmail1">Ingrese su Email</label>
+                              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                              <small id="emailHelp" class="form-text text-muted">Debe ingresar el mail con el cual se ha registrado.</small>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                          </form>
                     </p>
-                    <p>
-                        <input id="enviar" type="submit" name="submit" value="Enviar"/>
-                    </p>
-                </form>
-               
-                <p>
-                    Recibirá un mail de recupero de clave/usuario
-                </p>
+                    <hr>
+                    <p class="mb-0">En breves minutos recibirá un mail de S.U.S Manager con instrucciones para recuperar su Clave y Usuario.</p>
+                  </div>
             </div>     
 
             <div class="col-4">
@@ -108,11 +97,7 @@
                         En Coordinación con PROGRAMACIÓN WEB
                     </p>
                 </div>
-                <div class="col-4">
-                    <u><a href="sesion.html">Iniciar sesión</a></u>  
-                    <u><a href="registro.html"> Registrarse </a></u>
-                    <u><a href="contacto.html"> Contacto </a></u>
-                </div> 
+                
             </div>
         </div>
     </footer>
