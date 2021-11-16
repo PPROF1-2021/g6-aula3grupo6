@@ -59,7 +59,16 @@ section
     
     
 }
-
+#icono1
+{
+    
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: small;
+    margin: 10px;
+    background-color:skyblue;
+}
 .pie
 {
     color:cornsilk;
