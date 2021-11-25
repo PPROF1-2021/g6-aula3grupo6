@@ -39,42 +39,32 @@
             <div class="row">
                 <div class="col-8">
                     <!-- se cambia a tipo php y redirige a insertar usuario -->
-                    <form method="POST" action="insertar_usuario.php"
-                    onsubmit="return validar()">
-
+                    <form method="POST" action="insertar_usuario.php">
                     <div class="form-row" >
                           <div class="col-md-4 mb-3">
-                            <label for="validationServer01">Nombre</label>
-
+                            <label for="validationCustom01">Nombre</label>
                             <!--primero colocamos parametros que vamos a pasar por php y al ultimo el estilo-->
-                            <input id="nombre" type="text" name="nombre" maxlength="45" placeholder="Nombre" required
+                            <input id="nombre" type="text" name="nombre" minlength="2" maxlength="45" placeholder="Nombre" required
                             class="form-control is-valid">
-
                           </div>
 
                           <div class="col-md-4 mb-3">
                             <label for="validationServer02">Apellido</label>
 
                             <!--primero colocamos parametros que vamos a pasar por php y al ultimo el estilo-->
-                            <input id="apellido" type="text" name="apellido" maxlength="45" placeholder="Apellido" required
+                            <input id="apellido" type="text" name="apellido" minlength="2" maxlength="45" placeholder="Apellido" required
                             class="form-control is-valid">
 
-
                           </div>
-
                           <div class="col-md-4 mb-3">
-
                             <label for="validationServer02">Telefono</label>
-
                             <!--primero colocamos parametros que vamos a pasar por php y al ultimo el estilo-->
-                            <input id="telefono" type="int" name="telefono" required required maxlength="15"
+                            <input id="telefono" type="int" name="telefono" required required maxlength="15" 
                             placeholder="(Cod Area) Nro.Telefono" value="Telefono" class="form-control is-valid">
-
                           </div>
 
                           <div class="col-md-4 mb-3">
                             <label for="validationServer02">E-Mail</label>
-
                             <!--primero colocamos parametros que vamos a pasar por php y al ultimo el estilo-->
                             <input id="email" type="email" name="email" required 
                             placeholder="name@example.com" class="form-control is-valid">
@@ -82,20 +72,18 @@
 
                           <div class="col-md-4 mb-3">
                             <label for="fechaNacimiento">Fecha Nacimiento</label>
-
                             <!--primero colocamos parametros que vamos a pasar por php y al ultimo el estilo-->
                             <input id="fechaNacimiento" type="date" name="fechaNacimiento" value="aaaa/mm/dd" required
                             placeholder="date" class="form-control is-valid">
+                            <h6 id="edad"><h6>
                             
                           </div>
-
                           <div class="col-md-4 mb-3">
                             <label for="validationServerUsername">Ingrese un nombre de usuario</label>
                             <div class="input-group">
                               <div class="input-group-prepend">
                                 <span class="input-group-text" id="inputGroupPrepend3">@</span>
                               </div>
-
                                 <!--primero colocamos parametros que vamos a pasar por php y al ultimo el estilo-->
                                 <input id="nombreUsuario" type="text" name="nombreUsuario" required required maxlength="20"
                                 placeholder="Username" aria-describedby="inputGroupPrepend3" class="form-control is-valid">
@@ -108,7 +96,6 @@
                             <input id="contraseña" type="text" name ="contraseña" 
                             placeholder="password" required required maxlength="20"
                             class="form-control is-valid">
-
                           </div>
                         </div>
 
@@ -123,17 +110,10 @@
                             </div>
                           </div>
                         </div>
-                        <button class="btn btn-primary" type="submit" onclick="redireccion()">Enviar</button>
+                        <button class="btn btn-primary" type="submit" onclick="redireccion()">Enviar </button>
 
                         </br>
-
-                        <?php
-                        if(isset($_GET['ok']))
-                        {
-                            echo "Datos recibidos.";
-                        }
-                        ?>
-
+                        
                     </form>
                 </div>
 
