@@ -23,6 +23,6 @@ if ($resultado){
  }
  
 
-header("location: plataforma.html");
+header("location: sesion.php");
 
 ?>
