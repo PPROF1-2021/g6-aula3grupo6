@@ -1,0 +1,203 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+h1{
+    padding-right: 20px;
+}
+header{
+    background-color: rgb(7, 13, 89);
+    height: 100px;
+    padding: 10px;
+    font-size: medium;
+    font-family:sans-serif;
+    color: aquamarine;
+    justify-items: center;
+    font-weight: bold;
+}
+.logo{
+    float: left;
+    height: 40px;
+}
+.nav-color{
+    background-color: rgb(7, 13, 89);
+}
+.navbar-toggler {
+    border: 0 !important;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border: 0 !important;
+}
+
+.toggler-icon{
+    width: 30px;
+    height: 3px;
+    background-color: #e74c3c;
+    display: block;
+    transition: all 0.2s;
+}
+
+.middle-bar{
+    margin: 5px auto;
+}
+
+.navbar-toggler .top-bar {
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
+}
+
+.navbar-toggler .middle-bar {
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar {
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%;
+}
+
+.navbar-toggler.collapsed .top-bar {
+    transform: rotate(0);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+    transform: rotate(0);
+}
+
+.navbar-toggler.collapsed .toggler-icon {
+    background-color: #777777;
+}
+.nav-link{
+    color: #fff;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+li a.active, li a:hover{
+    background: rgb(247, 182, 51);
+    transition: .5s;
+}
+
+main{ 
+    background: url('../images/fondo.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+footer{
+    background-color: rgb(7, 13, 89);
+    height: 50px;
+    padding: 10px;
+    text-align: center;
+    font-size: large;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    align-content: center;
+    color: aquamarine;
+}
+
+.caja{
+    background-color: rgb(88, 147, 212);
+    border-radius: 10px;
+    height: 425px;
+    padding: 20px;
+    background-size: cover;
+	background-position: center center;
+    text-align: center;
+    align-content: center;
+}
+
+.caja-form{
+    background-color:rgb(88, 147, 212);
+    border-radius: 10px;
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    background-size: cover;
+	background-position: center center;
+}
+
+.caja-plataforma{
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: small;
+    width: auto;
+    margin: 10px;
+    background-color:darkslategray;
+}
+@font-face{
+    font-family: 'lato';
+    src: url(../css/Fuentes/Lato-Black.ttf)format('truetype')
+         url(../css/Fuentes/Lato-BlackItalic.ttf)format('truetype')
+         url(../css/Fuentes/Lato-Bold.ttf)format('truetype')
+         url(../css/Fuentes/Lato-BoldItalic.ttf)format('truetype')
+         url(../css/Fuentes/Lato-Hairline.ttf)format('truetype')
+         url(../css/Fuentes/Lato-HairlineItalic.ttf)format('truetype')
+         url(../css/Fuentes/Lato-Heavy.ttf)format('truetype')
+         url(../css/Fuentes/Lato-HeavyItalic.ttf)format('truetype')
+         url(../css/Fuentes/Lato-Light.ttf)format('truetype')
+         url(../css/Fuentes/Lato-LightItalic.ttf)format('truetype')
+         url(../css/Fuentes/Lato-Medium.ttf)format('truetype')
+         url(../css/Fuentes/Lato-MediumItalic.ttf)format('truetype')
+         url(../css/Fuentes/Lato-Regular.ttf)format('truetype')
+         url(../css/Fuentes/Lato-Semibold.ttf)format('truetype')
+         url(../css/Fuentes/Lato-SemiboldItalic.ttf)format('truetype')
+         url(../css/Fuentes/Lato-Thin.ttf)format('truetype')
+         url(../css/Fuentes/Lato-ThinItalic.ttf)format('truetype')
+}
+.titulo{
+    font-family: lato;
+    font-size: xx-large;
+    font-weight: bold;
+    text-align: center;
+    color: rgba(65, 20, 97, 0.952);
+}
+.texto{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: x-large;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+}
+.textoL{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: x-large;
+    text-align: left;
+    align-content: center;
+    justify-content: center;
+}
+
+.alerta{
+    width: 200px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-align:left;
+    margin: auto;
+    color:rgb(141, 19, 19);
+    padding-top: 20px;
+}
+.alerta1{
+    width: 200px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-align:left;
+    margin: auto;
+    color:rgb(141, 19, 19);
+    padding-top: 20px;
+}
